@@ -57,3 +57,52 @@ nav ul li a:hover {
 .active {
     background-color:orangered;
 }
+footer {
+    width:100%;
+    background-color: #0000;
+    color:black;
+    text-align: center;
+    padding: 20px 0;
+    float: left;
+    
+}
+.keepOpen {
+    clear: both;
+}
+/* index.html*/
+ img#home-img {
+     width:400px;
+    display:block;
+    margin: 15px;
+    border:5px outset brown;
+    float:left;
+}
+h2#h2-home {
+    float:left;
+    
+}
+p#p-home {
+    float: left;
+    width: 56%
+}
+/*about.html*/
+img#about-img {
+    width:500px;
+    display: block;
+    margin: 15px;
+    border: 5px outset red;
+    float: left;
+}
+h2#h2-about {
+    float:left;
+}
+p#p-about{
+    float: left;
+    width: 45%;
+}
+/* produce.html*/
+h2#h2-produce {
+    float:left;
+    text-align: center;
+}
+/*contact.html*/

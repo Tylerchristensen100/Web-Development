@@ -24,11 +24,11 @@ header {
 header h1 {
     text-align: center;
     padding-top: 50px;
-    color:white;
+    color:red;
     text-shadow: 5px 5px 3px black;
      margin: 0;
     
-    font-family: 'Syncopate', sans-serif;
+    font-family: 'Nosifer', cursive;
     font-size: 50px;
 }
 
@@ -37,6 +37,8 @@ nav {
     background-color: orange;
     clear:both;
     margin: 0;
+    font-family: sans-serif;
+    font-size: 20px
 }
 
 nav ul {
@@ -86,6 +88,7 @@ h2#h2-home {
     float:left;
     margin-top: 10px;
     margin-bottom: 0; 
+    font-family: 'Fjalla One', sans-serif;
 }
 p#p-home {
     float: left;
@@ -102,21 +105,35 @@ img#about-img {
 }
 h2#h2-about {
     float:left;
+    font-family: 'Fjalla One', sans-serif;
 }
 p#p-about{
     float: left;
     width: 45%;
 }
 /* produce.html*/
- img#produce-img {
-     width:400px;
-    display:block;
-    margin: 15px;
-    border:5px outset brown;
-    float:left;
+div#gallery {
+    width: 100%;
+    height: 100%;
+    border: 3px dotted green;
 }
-h2#h2-produce {
+figure {
+    width 250px;
     float:left;
+    background-color: #faa406;
+    box-shadow:1px 1px 10px black;
+}
+figure img{
+    display:block;
+    width: 200px;
+    height:100%;
+    margin: 18px 10px;
+    border: solid black;
+}
+figcaption {
     text-align: center;
+    padding-bottom: 10px;
+    font-family:sans-serif;
+    font-size: 14px;
 }
 /*contact.html*/

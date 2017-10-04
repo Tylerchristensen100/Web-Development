@@ -100,7 +100,7 @@ img#about-img {
     width:500px;
     display: block;
     margin: 15px;
-    border: 5px outset red;
+    border: 5px outset #a83f07;
     float: left;
 }
 h2#h2-about {

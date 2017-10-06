@@ -143,11 +143,17 @@ figcaption {
 h2#h2-contact {
     margin-left: 10px;
     font-family: 'Fjalla One', sans-serif;
+    
+    clear: both;
+    width: 25%;
+}
+form{
+    float:left;
 }
 form#form-contact { 
     margin-left: 10px;
 }
-form input {
+form input, textarea {
     margin-bottom:10px;
 }
 button#button-contact {
@@ -155,5 +161,16 @@ button#button-contact {
     height: 25px;
     font-weight: 500;
     margin-bottom: 15px;
+    margin-top: 10px;
     box-shadow: 2px 3px 2px #62077e;
+    float:left;
+}
+div#map {
+    float:right;
+    margin-right:20px;
+    margin-top:0;
+    margin-left:0;
+}
+div#map h2 {
+    margin-top:0;
 }

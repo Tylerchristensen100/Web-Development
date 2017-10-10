@@ -7,7 +7,7 @@ body{
 }
 
 div#container {
-    background-color: burlywood;
+    background-color: rgba(242, 161, 12, 0.5);
     width:1024px;
     /*centers the container */
     margin:auto;
@@ -34,7 +34,7 @@ header h1 {
 
 nav {
     width:100%;
-    background-color: orange;
+    background-color: #ffa500;
     clear:both;
     margin: 0;
     font-family: sans-serif;
@@ -59,10 +59,10 @@ nav ul li a {
     padding:14px 16px;
 }
 nav ul li a:hover {
-    background-color: red;
+    background-color: orangered;
 }
 .active {
-    background-color:orangered;
+    background-color:red;
 }
 footer {
     width:100%;
@@ -116,9 +116,9 @@ h2#h2-produce{
     font-family: 'Fjalla One', sans-serif;
 }
 div#gallery {
-    width: 100%;
+    width: 99.5%;
     height: 100%;
-    border: 3px dotted green;
+    border: 3px dotted rgba(0, 0, 0, 0.85);
 }
 figure {
     width 250px;

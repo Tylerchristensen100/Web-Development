@@ -1,0 +1,22 @@
+/*style for blog website*/
+
+/*reset*/
+html,body,div,h1,h2,h3,h4,h5,p,ul,ol,li
+{
+    margin:0;
+    padding:0;
+}
+/*universal style*/
+body {
+    background-color: #000;
+}
+#container {
+    background-color: beige;
+    width:380px;
+}
+h1{
+    color:brown;
+}
+p1{
+    color: orange;
+}

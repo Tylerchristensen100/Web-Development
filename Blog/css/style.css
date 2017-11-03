@@ -27,6 +27,9 @@ header#blogHeader {
 }
 /* Blog Post */
 div#blogPost {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     width:100%;
     margin: 15px 0;
     padding: 10px;
@@ -34,6 +37,17 @@ div#blogPost {
     box-shadow: 3px 3px 3px black;
     text-align: center;
 }
+div#postImg {
+    display: block;
+    margin: 5px;
+    width:150px;
+    height:150px;
+    background-color: white;
+}
+
+
+
+
 footer{
     text-align: center;
 }

@@ -7,16 +7,33 @@ html,body,div,h1,h2,h3,h4,h5,p,ul,ol,li
     padding:0;
 }
 /*universal style*/
-body {
-    background-color: #000;
+body{
+    background-color: darkgray;
+
 }
-#container {
-    background-color: beige;
-    width:380px;
+div#container {
+    margin:auto;
+    width: 100%;
+    background-color:gray;
+    display:flex;
+    flex-direction: column;
 }
-h1{
-    color:brown;
+header#blogHeader {
+    width:100%;
+    height: 300px;
+    font-family:sans-serif;
+    text-align:center;
+    background-color:white;
 }
-p1{
-    color: orange;
+/* Blog Post */
+div#blogPost {
+    width:100%;
+    margin: 15px 0;
+    padding: 10px;
+    background-color: #b2b5c7;
+    box-shadow: 3px 3px 3px black;
+    text-align: center;
+}
+footer{
+    text-align: center;
 }

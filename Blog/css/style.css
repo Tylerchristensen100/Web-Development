@@ -33,7 +33,7 @@ header h1 {
     align-self: center;
 }
 /* Blog Post */
-div#blogPost1 {
+div#blogPost {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -45,26 +45,26 @@ div#blogPost1 {
     text-align: center;
      font-family: 'Roboto', sans-serif;
 }
-div#postImg1 {
+div#postImg {
     display: block;
     margin: 5px;
     width:150px;
     height:150px;
     background-color: black;
 }
-div#postBody1 {
+div#postBody {
     display:flex;
     flex-direction: column;
     flex-wrap: wrap;
     margin: 0 5px;
 }
-h2#postTitle1 {
+h2#postTitle {
     align-self: auto;
 }
-h5#postStamp1 {
+h5#postStamp {
     color: purple;
 }
-p1#postText1 {
+p1#postText{
     font-size: 1.2em;
     color: #ef53f5;
 }

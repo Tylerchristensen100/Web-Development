@@ -68,6 +68,12 @@ p1#postText{
     font-size: 1.2em;
     color: #ef53f5;
 }
+video#postVid {
+    width: auto;
+    height: auto;
+    border: 3px 3px black;
+}
+
 
 
 

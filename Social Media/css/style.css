@@ -65,6 +65,7 @@ div#profile_info h4{
     order:2;
     font-size: 1em;
 }
+/* navigation */
 nav {
     order: 1;
     width:10%;
@@ -77,17 +78,14 @@ nav {
     font-size: 20px;
 }
 
-nav ul {
+nav li {
      margin: 0;
     padding:0;
     overflow: hidden;
     list-style: none;
 }
 
-nav ul li {
-
-}
-nav ul li a {
+nav li a {
     display: block;
     color:black;
     text-align: left;
@@ -95,8 +93,8 @@ nav ul li a {
     font-family:sans-serif;
     
 }
-nav ul li a:hover {
-    background-color: #0950f0;
+nav li a:hover {
+    background-color: hotpink;
 }
 div#content{
     order:2;
@@ -145,19 +143,31 @@ div#content div.post-foot {
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
+    flex-direction: row;
     order:3;
     width:100%;
 }
-
-div#content div.post div.post-foot h5.p-comments {
+/* Comment */
+div#content div.post div.post-foot div.p-comments {
    order:1;
-    padding: 5px;
+    margin: 6px;
+    display:flex;
+   flex-wrap:wrap;
+    width:100%;
 }
+/*comment title h5 */
+div#content div.post div.post-foot div.p-comments h5{
+    flex-wrap:wrap;
+    flex:1;
+    
+}
+/* likes */
 div#content div.post div.post-foot h5.p-likes{
    order:2;
-    padding:5px;
+    margin:6px;
+    width:100%;
 }
-
+/* footer */
 footer {
     order:3;
     width:100%;
@@ -165,5 +175,5 @@ footer {
     color:black;
     text-align: center;
     padding: 20px 0;
-    flex: auto; 
+    margin: 12px; 
 }

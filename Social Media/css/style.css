@@ -104,7 +104,7 @@ div#content div.post{
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin:auto;
+    margin:12px auto;
     width:75%;
     background-color: white;
     box-shadow: 2px 2px 2px black;
@@ -149,17 +149,22 @@ div#content div.post-foot {
 }
 /* Comment */
 div#content div.post div.post-foot div.p-comments {
-   order:1;
+   display: flex;flex: 1 1 auto;
+    flex-wrap: wrap;
+    flex-direction: column;
+    order:1;
     margin: 6px;
-    display:flex;
-   flex-wrap:wrap;
-    width:100%;
 }
 /*comment title h5 */
 div#content div.post div.post-foot div.p-comments h5{
-    flex-wrap:wrap;
-    flex:1;
-    
+
+    flex: 100 1 auto;
+    flex-wrap: wrap;    
+}
+div#content div.post div.post-foot div.p-comments .com-pic{
+    flex:100;
+    order:2;
+    width:50px;
 }
 /* likes */
 div#content div.post div.post-foot h5.p-likes{

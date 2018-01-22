@@ -9,8 +9,98 @@
 
 <body>
     <script>
-        var favColor = prompt("What is your favorite color?").toLowerCase(); 
-        if (favColor == "green")
+        
+        var bread = 0;
+        
+        
+        
+       Town();
+        
+        
+        function Town() 
+        {
+            var town = prompt("Welcome to a small town in some fantasy land. We have a butcher, baker, and candlestick maker, and an Inn.").toLowerCase();
+            
+            if(town == "inn")
+            {
+                Inn();
+            }
+            else if(town == "baker")
+            {
+                Baker();
+            }
+            else
+            {
+                Town();
+            }
+           
+            
+            
+                function Inn() 
+            {
+                var inn = prompt("Welcome to the Inn.  What can I help you with?");
+            }
+            
+            function Baker()
+            {
+                var baker = prompt("What pastry can I get you today?");
+            }
+            
+            
+            if(baker == "exit")
+                {
+                    Town();
+                }
+            else if (baker == "bread")
+            {
+                alert("Nice hot loaf of bread for ye");
+                bread ++;
+                Baker();
+            }
+            else
+            {
+                alert("I do not have any " + baker);
+                Baker();
+            }
+            
+        }
+        
+        
+        
+        
+        
+        
+        //var favColor = prompt("What is your favorite color?").toLowerCase(); 
+        
+        
+        
+        /*switch(favColor)
+            {
+                case "blue":
+                    alert("The sky is Blue.");
+                break;
+                case "red":
+                    alert("Your blood is Red.");
+                break;
+                    case "green":
+                    alert("Grass is Green.");
+                break;
+                    case "yellow":
+                    alert("The Sun is Yellow.");
+                break;
+                case "orange":
+                    alert("Orange juice is Orange.");
+                break;
+                    
+                default:
+                    alert("That is not a primary color")
+                break;
+            }*/
+        
+        
+        
+        
+        /*if (favColor == "green")
             {
             alert("Grass is Green.");
             }
@@ -40,20 +130,11 @@
                 }
             else {
                 alert("You have poor taiste in color.");
-                 }
+                 }*/
             
         //alert("Your favorite color is " + favColor);
-        //confirm("Is your favorite color " + favColor + "?");
-        
-        
-        
-        
-        
-        
-        
-        
+        //confirm("Is your favorite color " + favColor + "?")
     </script>
-    
     
 </body>
 </html>

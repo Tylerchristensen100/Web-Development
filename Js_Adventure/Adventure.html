@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Js Adventure</title>
+</head>
+
+<body>
+    <script>
+        
+        Start();
+        _1();
+        
+        
+        
+        function Start() 
+        {
+            alert("Welcome to Warehouse Scout");
+            var playerName = prompt("What is your name?");
+            
+            alert("Welcome " + playerName);
+            alert("Warehouse Scout is all about walking through a warehouse and what you can find and what you can open.");
+        }
+        
+         function _1()
+        {
+            var answer = prompt("You are at the front of the warehouse.  You see a dimly lit hallway to your left, a stack of boxes to your right, and a flashlight up ahead.  What do you want to do?").toLowerCase();
+        
+            if(answer == "flashlight")
+                {
+                    Flashlight();
+                }
+            else if (answer == "hallway")
+                {
+                    Hallway();
+                }
+            else if(answer == "boxes")
+                {
+                    Boxes();
+                }
+            else 
+                {
+                    alert(answer + " was not one of your options.")
+                    _1();
+                }
+        }
+        
+        function Flashlight()
+            {
+                var Flashlightyn = prompt("Do you want to turn the flashlight on?\n Respond 'y' or 'n'").toLowerCase();
+                if(Flashlightyn == "y")
+                    {
+                        var fYN = prompt("flashlight is on. Do you want to go down the dim hallway?").toLowerCase();
+                        if(fYN == "y")
+                            {
+                                Hallway();
+                            }
+                        else 
+                            {
+                                _1();
+                            }
+                    }
+                else
+                {
+                    _1();
+                }
+            }
+        function Hallway()
+            {
+                alert("You entered hallway.");
+            }
+        function Boxes()
+            {
+                alert("You went to the boxes");
+            }
+        
+        
+        
+        var inventory = {
+            sword: 1,
+            gun: 1
+        };
+        if(inventory.sword() = 1)
+            alert("you have the sword");
+        
+        
+     
+    </script>
+    
+</body>
+</html>

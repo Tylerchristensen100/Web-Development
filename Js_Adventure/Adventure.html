@@ -8,6 +8,7 @@
 </head>
 
 <body>
+   
     <script>
         
         Start();
@@ -31,6 +32,7 @@
             if(answer == "flashlight")
                 {
                     Flashlight();
+                    inventory.flashlight = 1;
                 }
             else if (answer == "hallway")
                 {
@@ -52,8 +54,8 @@
                 var Flashlightyn = prompt("Do you want to turn the flashlight on?\n Respond 'y' or 'n'").toLowerCase();
                 if(Flashlightyn == "y")
                     {
-                        var fYN = prompt("flashlight is on. Do you want to go down the dim hallway?").toLowerCase();
-                        if(fYN == "y")
+                        flashlightyn = prompt("flashlight is on. Do you want to go down the dim hallway?").toLowerCase();
+                        if(flashlightyn == "y")
                             {
                                 Hallway();
                             }
@@ -69,9 +71,91 @@
             }
         function Hallway()
             {
+                //inventory.gun = 0;
+                //inventory.battery = 0;
+                
                 alert("You entered hallway.");
+               
+                if(inventory.flashlight = 1)
+                {
+                 var HallwayA  = prompt("You are walking down the hallway with your flashlight on. You see a gun to your left, a room to your right with a light on, and a battery in front of you.  What do you want to do?").toLowerCase();
+                    
+                    if(HallwayA == "gun")
+                        {
+                            inventory.gun = 1;
+                            alert("The gun has been added to your inventory.")
+                            HallwayA = prompt("Do you what to go to the room, the battery, or go back?").toLowerCase();
+                            
+                            if(HallwayA == "room")
+                                {
+                                    Room();
+                                    alert("You entered the room");
+                                }
+                            else if(HallwayA == "battery")
+                                {
+                                    inventory.battery = 1;
+                                    
+                                    alert("Battery has been added to your inventory.")
+                                    HallwayA = prompt("Do you want to go to the room or do you want to go back?").toLowerCase();
+                                    
+                                    if(HallwayA == "room")
+                                        {
+                                            Room();
+                                        }
+                                    else
+                                        {
+                                            Hallway();
+                                        }
+                                }
+                            
+                        }
+                    
+                    else if(HallwayA == "battery")
+                        {
+                            inventory.battery = 1;
+                            alert("The battery has been added to your inventory.");
+                            HallwayA = prompt("Do you want to go to the room or the gun or back?")
+                            if(HallwayA = "gun")
+                                {
+                                inventory.gun = 1;
+                                alert("The gun has been added to your inventory.")
+                                HallwayA = prompt("Do you what to go to the room or go back?").toLowerCase();
+                                    if(HallwayA == "room")
+                                    {
+                                        Room();
+                                    }
+                                    else
+                                    {
+                                            Hallway();
+                                    }
+                                }
+                            else if (HallwayA == "room")
+                                {
+                                    Room();
+                                    alert("You entered the room");
+                                }
+                        }
+                    else if (HallwayA == "room")
+                        {
+                            alert("You entered the Room");
+                        }
+                    else
+                        {
+                            Hallway();
+                        }
+                    
+                }
+                else
+                {
+                    alert("The hallway is dark.  You can not see anything.");
+                    _1();
+                }
             }
-        function Boxes()
+            function Room()
+            {
+            alert("You entered the room");
+        }
+            function Boxes()
             {
                 alert("You went to the boxes");
             }
@@ -79,11 +163,14 @@
         
         
         var inventory = {
-            sword: 1,
-            gun: 1
+            flashlight: 0,
+            gun: 0,
+            knife: 0,
+            battery: 0,
+            box: 0,  
+            steak: 0,
         };
-        if(inventory.sword() = 1)
-            alert("you have the sword");
+        
         
         
      

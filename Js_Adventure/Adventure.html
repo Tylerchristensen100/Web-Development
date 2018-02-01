@@ -73,8 +73,6 @@
             {
                 //inventory.gun = 0;
                 //inventory.battery = 0;
-                
-                alert("You entered hallway.");
                
                 if(inventory.flashlight = 1)
                 {
@@ -93,7 +91,7 @@
                                 }
                             else if(HallwayA == "battery")
                                 {
-                                    inventory.battery = 1;
+                                    inventory.battery >= 1;
                                     
                                     alert("Battery has been added to your inventory.")
                                     HallwayA = prompt("Do you want to go to the room or do you want to go back?").toLowerCase();
@@ -162,7 +160,7 @@
         
         
         
-        var inventory = {
+         var inventory = {
             flashlight: 0,
             gun: 0,
             knife: 0,

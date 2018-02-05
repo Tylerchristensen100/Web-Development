@@ -11,6 +11,18 @@
    
     <script>
         
+        
+        var inventory = {
+            flashlight: 0,
+            gun: 0,
+            knife: 0,
+            battery: 0,
+            box: 0,  
+            steak: 0,
+            crowbar:0,
+        };
+        
+        
         Start();
         _1();
         
@@ -47,7 +59,7 @@
                     alert(answer + " was not one of your options.")
                     _1();
                 }
-        }
+        } 
         
         function Flashlight()
             {
@@ -151,23 +163,77 @@
             }
             function Room()
             {
-            alert("You entered the room");
+            var roomA = prompt("The room is bright and on the right side there is a table, on the left there is a minifridge, ahead is a knife on a counter.  Do you want to take the knife, open the minifridge, or go to the table.").toLowerCase();
+                
+                if(roomA == "knife")
+                {
+                    inventory.knife = 1;
+                    alert("The knife has been added to your inventory.")
+                    roomA = prompt("Do you want to go to the table, the minifridge, or leave the room.").toLowerCase();
+                    if(roomA = "table")
+                        {
+                            alert("The table is empty.");
+                            Room();
+                        }
+                    else if(roomA = "minifridge")
+                        {
+                            roomA = prompt("There is a steak in the minifridge.  Do you want to take the steak?").toLowerCase();
+                            if(roomA == "y")
+                                {
+                                    inventory.steak = 1;
+                                    alert("Steak has been added to your inventory.")
+                                    Room();
+                                    
+                                }
+                            else {
+                                Room();
+                            }
+                        }
+                    
+                    else 
+                        {
+                            Hallway();
+                        }
+                
+                }
+                else if(roomA == "minifridge")
+                    {
+                        roomA = prompt("There is a steak in the minifridge.  Do you want to take the steak?").toLowerCase();
+                            if(roomA == "y")
+                                {
+                                    inventory.steak = 1;
+                                    alert("Steak has been added to your inventory.")
+                                    Room();
+                                }
+                            else {
+                                Room();
+                            }
+                        
+                    }
+                else if (roomA == "table")
+                    {
+                            alert("The table is empty.");
+                            Room();
+                    }
         }
             function Boxes()
             {
-                alert("You went to the boxes");
+                var boxA = prompt("To your right there is a crowbar, to your left there boxes stacked to the ceiling, in front of you there is a small box that you can carry.  Do you want to take the crowbar, or pick up the box?").toLowerCase();
+                if(boxA == "box")
+                    {
+                        inventory.box = 1;
+                        alert("The box has been added to your inventory.");
+                    }
+                else if(boxA = "crowbar")
+                    {
+                        inventory.crowbar = 1;
+                        alert("Crowbar has been added to your inventory.")
+                    }
             }
         
         
         
-         var inventory = {
-            flashlight: 0,
-            gun: 0,
-            knife: 0,
-            battery: 0,
-            box: 0,  
-            steak: 0,
-        };
+         
         
         
         

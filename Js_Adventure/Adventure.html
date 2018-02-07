@@ -7,7 +7,8 @@
     <title>Js Adventure</title>
 </head>
 
-<body>
+<body style ="background-color:black;">
+ 
    
     <script>
         
@@ -223,13 +224,53 @@
                     {
                         inventory.box = 1;
                         alert("The box has been added to your inventory.");
+                        boxA = prompt("Do you want to go back, take the crowbar or go outside?").toLowerCase();
+                        
+                        if(boxA == "back")
+                            {
+                                Boxes();
+                            }
+                        
+                        else if(boxA == "crowbar")
+                            {
+                                inventory.crowbar = 1;
+                                alert("Crowbar has been added to your inventory.")
+                            }
+                        else if (boxA == "outside")
+                            {
+                               Outside(); 
+                            }
+
                     }
                 else if(boxA = "crowbar")
                     {
                         inventory.crowbar = 1;
                         alert("Crowbar has been added to your inventory.")
+                        boxA = prompt("Do you want to take the box, go back, or go outside?").toLowerCase();
+                        
+                        if(boxA == "box")
+                            {
+                            inventory.box = 1;
+                            alert("The box has been added to your inventory.");
+                            }
+                            
+                        else
+                            Boxes();
                     }
             }
+        
+        function Outside()
+        {
+            if(inventory.gun = 1)
+                {
+                    alert("Your inventory is " + inventory);
+                    var outsideA = prompt("You are outside.  You have completed the game. Would you like to play again?").toLowerCase();
+                    if(outsideA == "y")
+                        Start();
+                    else
+                    close();
+                }
+        }
         
         
         

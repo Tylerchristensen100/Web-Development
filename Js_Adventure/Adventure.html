@@ -164,7 +164,7 @@
             }
             function Room()
             {
-            var roomA = prompt("The room is bright and on the right side there is a table, on the left there is a minifridge, ahead is a knife on a counter.  Do you want to take the knife, open the minifridge, or go to the table.").toLowerCase();
+            var roomA = prompt("The room is bright and on the right side there is a table, on the left there is a minifridge, ahead is a knife on a counter.  Do you want to take the knife, open the minifridge, go to the table, or go back? ").toLowerCase();
                 
                 if(roomA == "knife")
                 {
@@ -190,6 +190,7 @@
                                 Room();
                             }
                         }
+                
                     
                     else 
                         {
@@ -197,6 +198,7 @@
                         }
                 
                 }
+            
                 else if(roomA == "minifridge")
                     {
                         roomA = prompt("There is a steak in the minifridge.  Do you want to take the steak?").toLowerCase();
@@ -216,6 +218,12 @@
                             alert("The table is empty.");
                             Room();
                     }
+                else if (roomA == "back")
+                    {
+                        Hallway();
+                    }
+                else
+                    Room();
         }
             function Boxes()
             {
@@ -271,11 +279,7 @@
                     close();
                 }
         }
-        
-        
-        
-         
-        
+ 
         
         
      

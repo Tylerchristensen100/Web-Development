@@ -4,14 +4,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Js Adventure</title>
+    <title>Warehouse Scout</title>
 </head>
 
-<body style ="background-color:black;">
+<body style ="background-color:darkslategray;">
  
    
     <script>
         
+      
         
         var inventory = {
             flashlight: 0,
@@ -84,8 +85,7 @@
             }
         function Hallway()
             {
-                //inventory.gun = 0;
-                //inventory.battery = 0;
+                
                
                 if(inventory.flashlight = 1)
                 {
@@ -113,6 +113,9 @@
                                         {
                                             Room();
                                         }
+                                    else if (HallwayA == "back")
+                                        _1();
+                                    
                                     else
                                         {
                                             Hallway();
@@ -135,6 +138,9 @@
                                     {
                                         Room();
                                     }
+                                    else if (HallwayA == "back")
+                                        _1();
+                                    
                                     else
                                     {
                                             Hallway();
@@ -149,7 +155,11 @@
                     else if (HallwayA == "room")
                         {
                             alert("You entered the Room");
+                            Room();
                         }
+                    else if (HallwayA == "back")
+                        _1();
+                    
                     else
                         {
                             Hallway();
@@ -187,8 +197,8 @@
                                     
                                 }
                             else {
-                                Room();
-                            }
+                                    Room();
+                                 }
                         }
                 
                     
@@ -271,12 +281,12 @@
         {
             if(inventory.gun = 1)
                 {
-                    alert("Your inventory is " + inventory);
                     var outsideA = prompt("You are outside.  You have completed the game. Would you like to play again?").toLowerCase();
                     if(outsideA == "y")
                         Start();
                     else
-                    close();
+                    alert("Goodbye");
+                
                 }
         }
  

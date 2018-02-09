@@ -37,6 +37,14 @@
             
             alert("Welcome " + playerName);
             alert("Warehouse Scout is all about walking through a warehouse and what you can find and what you can open.");
+            
+            inventory.flashlight = 0;
+            inventory.gun = 0;
+            inventory.knife = 0;
+            inventory.battery = 0;
+            inventory.box = 0;
+            inventory.steak = 0;
+            inventory.crowbar = 0;
         }
         
          function _1()
@@ -80,6 +88,7 @@
                     }
                 else
                 {
+                    alert(flashlightyn + " was not one of your options.")
                     _1();
                 }
             }
@@ -118,6 +127,7 @@
                                     
                                     else
                                         {
+                                            alert(HallwayA + " was not one of your options.")
                                             Hallway();
                                         }
                                 }
@@ -143,7 +153,8 @@
                                     
                                     else
                                     {
-                                            Hallway();
+                                        alert(HallwayA + " was not one of your options.")
+                                        Hallway();
                                     }
                                 }
                             else if (HallwayA == "room")
@@ -162,6 +173,7 @@
                     
                     else
                         {
+                            alert(HallwayA + " was not one of your options.")
                             Hallway();
                         }
                     
@@ -197,6 +209,7 @@
                                     
                                 }
                             else {
+                                
                                     Room();
                                  }
                         }
@@ -271,8 +284,12 @@
                             inventory.box = 1;
                             alert("The box has been added to your inventory.");
                             }
-                            
+                            else if (boxA == "outside")
+                                {
+                                    Outside();
+                                }
                         else
+                            alert(boxA + " was not one of your options.")
                             Boxes();
                     }
             }
@@ -284,14 +301,16 @@
                     var outsideA = prompt("You are outside.  You have completed the game. Would you like to play again?").toLowerCase();
                     if(outsideA == "y")
                         Start();
+                    
                     else
                     alert("Goodbye");
                 
                 }
+            else
+                alert("You have not collected everything you need to go outside");
+                Boxes();
         }
- 
-        
-        
+
      
     </script>
     

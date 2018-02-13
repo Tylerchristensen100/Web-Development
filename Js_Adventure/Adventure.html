@@ -7,11 +7,12 @@
     <title>Warehouse Scout</title>
 </head>
 
-<body style ="background-color:darkslategray;">
+<body style ="background-color:black;">
  
    
     <script>
         
+          
       
         
         var inventory = {
@@ -24,27 +25,30 @@
             crowbar:0,
         };
         
-        
-        Start();
-        _1();
-        
-        
-        
-        function Start() 
-        {
-            alert("Welcome to Warehouse Scout");
-            var playerName = prompt("What is your name?");
-            
-            alert("Welcome " + playerName);
-            alert("Warehouse Scout is all about walking through a warehouse and what you can find and what you can open.");
-            
-            inventory.flashlight = 0;
+         inventory.flashlight = 0;
             inventory.gun = 0;
             inventory.knife = 0;
             inventory.battery = 0;
             inventory.box = 0;
             inventory.steak = 0;
             inventory.crowbar = 0;
+       
+        Start();
+        _1();
+        
+        
+        function Start() 
+        {
+            
+            alert("Welcome to Warehouse Scout");
+            var playerName = prompt("What is your name?");
+            
+            alert("Welcome " + playerName);
+            alert("Warehouse Scout is all about walking through a warehouse and what you can find and what you can open.");
+            
+           
+            
+         
         }
         
          function _1()
@@ -304,6 +308,11 @@
                     
                     else
                     alert("Goodbye");
+                    alert("press enter to see Easter Egg.");
+                     for(var i = 1; i < 10000000; i++)
+                        {
+                           alert("You competed the game!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"); 
+                        }
                 
                 }
             else

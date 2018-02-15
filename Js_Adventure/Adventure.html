@@ -11,10 +11,7 @@
  
    
     <script>
-        
-          
-      
-        
+
         var inventory = {
             flashlight: 0,
             gun: 0,
@@ -35,7 +32,6 @@
        
         Start();
         _1();
-        
         
         function Start() 
         {
@@ -97,7 +93,7 @@
         } 
         
         function Flashlight()
-            {
+        {
                 var Flashlightyn = prompt("Do you want to turn the flashlight on?\n Respond 'y' or 'n'").toLowerCase();
                 if(Flashlightyn == "y")
                     {
@@ -117,8 +113,9 @@
                     _1();
                 }
             }
+        
         function Hallway()
-            {
+        {
                 if(inventory.flashlight == 1)
                 {
                  var HallwayA  = prompt("You are walking down the hallway with your flashlight on. You see a gun to your left, a room to your right with a light on, and a battery in front of you.  What do you want to do?").toLowerCase();
@@ -211,8 +208,9 @@
                         alert("Bye Bye");
                 }
             }
-            function Room()
-            {
+        
+        function Room()
+        {
             var roomA = prompt("The room is bright and on the right side there is a table, on the left there is a minifridge, ahead is a knife on a counter.  Do you want to take the knife, open the minifridge, go to the table, or go back? ").toLowerCase();
                 
                 if(roomA == "knife")
@@ -275,8 +273,9 @@
                 else
                     Room();
         }
-            function Boxes()
-            {
+    
+        function Boxes()
+        {
                 var boxA = prompt("To your right there is a crowbar, to your left there boxes stacked to the ceiling, in front of you there is a small box that you can carry.  Do you want to take the crowbar, or pick up the box?").toLowerCase();
                 if(boxA == "box")
                     {
@@ -338,18 +337,19 @@
                     alert("Goodbye");
                     alert("press enter to see Easter Egg.");
                     
-                    for(var i = 1; i < 10000000; i++)
+                    for(var i = 1; i < 10000; i++)
                         {
                            alert("You competed the game!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"); 
                         }
-                    }
+                    alert("Close the window now.  The game is over but I do not have permission to close the tab for you.");
+                    
+                }
                      
                 else
                 alert("You have not collected everything you need to go outside");
                 Boxes();
                 }
 
-     
     </script>
     
 </body>

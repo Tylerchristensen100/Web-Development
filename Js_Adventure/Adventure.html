@@ -25,7 +25,7 @@
             crowbar:0,
         };
         
-         inventory.flashlight = 0;
+            inventory.flashlight = 0;
             inventory.gun = 0;
             inventory.knife = 0;
             inventory.battery = 0;
@@ -43,11 +43,32 @@
             alert("Welcome to Warehouse Scout");
             var playerName = prompt("What is your name?");
             
+            var favColor = prompt("What is your favorite Color?").toLowerCase();
+            switch(favColor)
+                        {
+                            case "blue":
+                                alert("The sky is Blue.");
+                            break;
+                            case "red":
+                                alert("Your blood is Red.");
+                            break;
+                                case "green":
+                                alert("Grass is Green.");
+                            break;
+                                case "yellow":
+                                alert("The Sun is Yellow.");
+                            break;
+                            case "orange":
+                                alert("Orange juice is Orange.");
+                            break;
+
+                            default:
+                                alert("That is not a primary color")
+                            break;
+                        }
+            
             alert("Welcome " + playerName);
             alert("Warehouse Scout is all about walking through a warehouse and what you can find and what you can open.");
-            
-           
-            
          
         }
         
@@ -57,8 +78,8 @@
         
             if(answer == "flashlight")
                 {
-                    Flashlight();
                     inventory.flashlight = 1;
+                    Flashlight();
                 }
             else if (answer == "hallway")
                 {
@@ -98,9 +119,7 @@
             }
         function Hallway()
             {
-                
-               
-                if(inventory.flashlight = 1)
+                if(inventory.flashlight == 1)
                 {
                  var HallwayA  = prompt("You are walking down the hallway with your flashlight on. You see a gun to your left, a room to your right with a light on, and a battery in front of you.  What do you want to do?").toLowerCase();
                     
@@ -142,7 +161,7 @@
                         {
                             inventory.battery = 1;
                             alert("The battery has been added to your inventory.");
-                            HallwayA = prompt("Do you want to go to the room or the gun or back?")
+                            HallwayA = prompt("Do you want to go to the room or the gun or back?").toLowerCase();
                             if(HallwayA = "gun")
                                 {
                                 inventory.gun = 1;
@@ -184,8 +203,12 @@
                 }
                 else
                 {
-                    alert("The hallway is dark.  You can not see anything.");
-                    _1();
+                    alert("You tripped and a gun was fired. You are dead");
+                    HallwayA = prompt("Do you want to play again?").toLowerCase();
+                    if(HallwayA == "y")
+                        Start();
+                    else
+                        alert("Bye Bye");
                 }
             }
             function Room()
@@ -270,6 +293,11 @@
                             {
                                 inventory.crowbar = 1;
                                 alert("Crowbar has been added to your inventory.")
+                                boxA = prompt("Do you want to go outside?").toLowerCase();
+                                if(boxA == "y")
+                                    Outside();
+                                else
+                                    Boxes();
                             }
                         else if (boxA == "outside")
                             {
@@ -309,16 +337,17 @@
                     else
                     alert("Goodbye");
                     alert("press enter to see Easter Egg.");
-                     for(var i = 1; i < 10000000; i++)
+                    
+                    for(var i = 1; i < 10000000; i++)
                         {
                            alert("You competed the game!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"); 
                         }
-                
-                }
-            else
+                    }
+                     
+                else
                 alert("You have not collected everything you need to go outside");
                 Boxes();
-        }
+                }
 
      
     </script>

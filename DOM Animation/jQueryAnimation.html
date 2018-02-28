@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+    $("button").click(function(){
+        for(i = 0; i < 100; i++)
+            {
+        var div = $("div");
+        div.animate({height: '800px', opacity: '0.4'}, "slow");
+        div.animate({width: '800px', opacity: '0.8'}, "slow");
+        div.animate({height: '400px', opacity: '0.4'}, "slow");
+        div.animate({width: '400px', opacity: '0.8'}, "slow");
+    }
+    });
+});
+</script> 
+</head>
+<body>
+
+<button>Start Animation</button>
+
+<p>Google knows how to make an animation.</p>
+
+<div style="background:rgb(79, 5, 244);height:100px;width:100px;position:absolute;"></div>
+
+</body>
+</html>

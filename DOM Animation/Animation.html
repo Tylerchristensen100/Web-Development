@@ -6,39 +6,45 @@
     <title></title>
 </head>
 
-<body>
-    <h1>My First JavaScript Animation</h1>
-    <div id="container">
-    <div id="animation">My animaiton will go here</div>
-    </div>
-    
-</body>
+
 </html>
 <style>
     #container {
-        width:400px;
-        height:400px;
+        width:1200px;
+        height:1200px;
         position:relative;
-        background:blue;
+        background:#de0a74;
         
     }
     
     #animate {
-        width:50px;
-        height:50px;
+        width:100px;
+        height:100px;
         position: absolute;
-        background:red;
+        background:#7ef209;
     }
+  
 </style>
+<body>
+    
+    <p>
+    <button onclick="myMove()">Click Me</button>
+    </p>
+    <h1>My First JavaScript Animation</h1>
+    <div id="container">
+    <div id="animate"></div>
+    </div>
+    
+</body>
 <script>
     function myMove() {
         var elem = document.getElementById("animate");
         var pos = 0;
-        var id = setInterval(frame, 5);
+        var id = setInterval(frame, 100);
     
     function frame() 
     {
-        if(pos == 350)
+        if(pos == 1100)
            {
            clearInterval(id);
            }
@@ -49,5 +55,4 @@
          }
        }
     }
-
 </script>

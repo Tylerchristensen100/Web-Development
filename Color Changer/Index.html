@@ -1,0 +1,103 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  
+  <title>Color Changer</title>    
+</head>
+<body>
+  <button id="change" class="btn">Change Color</button>
+  <div class="mdls">
+    <div class="modal" id="modal">
+      <div class="main">
+        <div class="left">
+          <div class="filler"></div>
+          <div id="row1">
+            <label>
+              <input type="radio" name="colors" onclick="Preview()" value="#F44336"/>
+              <div class="box red500"></div>
+            </label>
+            
+            <label>
+              <input type="radio" name="colors" onclick="Preview()" value="#FF9800"/>
+              <div class="box orange500"></div>
+            </label>
+            
+            <label>
+              <input type="radio" name="colors" onclick="Preview()" value="#FFEB3B"/>
+              <div class="box yellow500"></div>
+            </label>
+          </div>
+
+          <div id="row2">
+            <label>
+              <input type="radio" name="colors" onclick="Preview()" value="#4CAF50"/>
+              <div class="box green500"></div>
+            </label>
+            
+            <label>
+              <input type="radio" name="colors" onclick="Preview()" value="#2196F3"/>
+              <div class="box blue500"></div>
+            </label>
+            
+            <label>
+              <input type="radio" name="colors" onclick="Preview()" value="#3F51B5"/>
+              <div class="box indigo500"></div>
+            </label>
+          </div>
+          
+          <div id="row3">
+            <label>
+              <input type="radio" name="colors" onclick="Preview()" value="#9C27B0"/>
+              <div class="box purple500"></div>
+            </label>
+            
+            <label>
+              <input type="radio" name="colors" onclick="Preview()" value="#FFFFFF"/>
+              <div class="box white"></div>
+            </label>
+            
+            <label>
+              <input type="radio" name="colors" onclick="Preview()" value="#9E9E9E"/>
+              <div class="box grey500"></div>
+            </label>
+              <label>
+              <input type="radio" name="colors" onclick="Preview()" value="#10f807"/>
+              <div class="box neonGreen500"></div>
+            </label>
+              <label>
+              <input type="radio" name="colors" onclick="Preview()" value="#0befef"/>
+              <div class="box teal500"></div>
+            </label>
+              <label>
+              <input type="radio" name="colors" onclick="Preview()" value="#000"/>
+              <div class="box black500"></div>
+            </label>
+          </div>
+          <div class="filler"></div>
+        </div>
+        
+        <div class="center">
+          <div class="filler"></div>
+          <div class="previews">
+            <div id="preview"></div>
+          </div>
+          <div class="filler"></div>
+        </div>
+        
+        <div class="right">
+          <div class="filler"></div>
+          <div>
+            <button onclick="Close()" class="btn2">Close</button>
+            <button onclick="changeColor()" class="btn2">Change</button>
+          </div>
+          <div class="filler"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+    
+</html>
+<link rel="stylesheet" type="text/css" href="style.css">
+   <script src="script.js"></script>

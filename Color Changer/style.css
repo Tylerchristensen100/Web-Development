@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+  background-color: white;
+	font-family: 'Roboto', sans-serif;
+  position: relative;
+  z-index: 50;
+  padding-bottom: 50px;
+}
+
+.main {
+  border-radius: 3px;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 50%;
+  height: 300;
+  text-align: left;
+  background-color: #1a1a1a;
+  margin: auto;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.6);
+}
+
+.main h1 {
+  color: #fff;
+}
+
+.main input[type="radio"] {
+  display: none;
+}
+
+.main input[type="radio"] + .box {
+  transition: all .4s ease-out;
+}
+
+.main input[type="radio"]:hover + .box {
+  transition: all .4s ease-out;
+  border-radius: 13px;
+}
+
+.main input[type="radio"]:checked + .box {
+  transition: ease all 0.4s;
+  border-radius: 100%;
+}
+
+.main .box {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  will-change: transition;
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+}
+
+.main .hue {
+	height: 20px;
+	width: 20px;
+	display: inline-block;
+	position: relative;
+	text-align: center;
+	font-size: 8.7px;
+	line-height: 30px;
+	padding: 0;
+	color: white;
+}
+
+.main .color {
+	height: 50px;
+	width: 50px;
+	display: inline-block;
+	position: relative;
+	text-align: center;
+	align-content: center;
+	font-size: 14px;
+	color: white;
+	margin: 0;
+}
+
+.main .fill {
+	height: 50px;
+	width: 50px;
+	display: inline-block;
+	position: relative;
+	text-align: center;
+	font-size: 14px;
+	padding: 0;
+	color: white;
+	margin: 0;
+}
+
+.filler {
+  flex: 1 1 auto;
+}
+
+#preview {
+	height: 175px;
+	width: 175px;
+	margin-top: 20px;
+	background-color: #1a1a1a;
+	margin-bottom: 20px;
+  border-radius: 20px;
+  border: 2px solid black;
+}
+
+.previews {
+	grid-column: 2 / 3;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.4);
+  overflow: auto;
+  z-index: 1;
+  transition: all .4s ease-out;
+}
+
+.mdls {
+  padding-top: 50px;
+  width: 50%;
+  margin: auto;
+  z-index: 999;
+  position: relative;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  grid-column: 1 / 2;
+}
+
+.center {
+  display: flex;
+  flex-direcion: column;
+  grid-column: 2 / 3;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  grid-column: 3 / 4;
+}
+
+.btn {
+  margin-right: 5px;
+  border: 1px solid #fae80a;
+  border-radius: 50px;
+  background-color: transparent;
+  color: #045825;
+  width: 96px;
+  height: 48px;
+  outline: none;
+  color: #045825;
+  transition: all .4s ease-out;
+}
+
+.btn:hover {
+  background-color: #000000;
+  color: white;
+  transition: all .4s ease-out;
+}
+
+.btn:active {
+  outline: none;
+}
+
+.btn2 {
+  margin-right: 10px;
+  border: 1px solid #2979FF;
+  border-radius: 50px;
+  background-color: transparent;
+  color: rgba(0,0,0, 0.87);
+  width: 96px;
+  height: 48px;
+  outline: none;
+  color: #2979FF;
+  transition: all .4s ease-out;
+  float: right;
+}
+
+.btn2:hover {
+  background-color: #2979FF;
+  color: white;
+  transition: all .4s ease-out;
+}
+
+.btn2:active {
+  outline: none;
+}
+
+.red500 {background-color: #F44336;}
+
+.orange500 {background-color: #FF9800;}
+
+.yellow500 {background-color: #FFEB3B;}
+
+.green500 {background-color: #4CAF50;}
+
+.blue500 {background-color: #2196F3;}
+
+.indigo500 {background-color: #3F51B5;}
+
+.purple500 {background-color: #9C27B0;}
+
+.white {background-color: #FFFFFF;}
+
+.grey500 {background-color: #9E9E9E;}
+
+.neonGreen500 {background-color: #10f807;}
+
+.teal500 {background-color: #0befef;}
+
+.black500 {background-color: #000;}

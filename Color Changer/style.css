@@ -16,7 +16,7 @@ body {
   width: 50%;
   height: 300;
   text-align: left;
-  background-color: #1a1a1a;
+  background-color: #ff9a9a;
   margin: auto;
   box-shadow: 0 2px 5px rgba(0,0,0,0.6);
 }
@@ -97,7 +97,7 @@ body {
 	height: 175px;
 	width: 175px;
 	margin-top: 20px;
-	background-color: #1a1a1a;
+	background-color:#ff9a9a;
 	margin-bottom: 20px;
   border-radius: 20px;
   border: 2px solid black;
@@ -136,7 +136,7 @@ body {
 
 .center {
   display: flex;
-  flex-direcion: column;
+  flex-direction: column;
   grid-column: 2 / 3;
 }
 

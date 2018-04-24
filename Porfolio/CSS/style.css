@@ -1,4 +1,4 @@
-
+/* Desktop size */
 body{
     background-color:white;
     margin:0;
@@ -6,6 +6,7 @@ body{
 }
 h2{
     font-size: 50px;
+    text-align: center;
 }
 nav {
     width:100%;
@@ -41,6 +42,88 @@ nav ul li a:hover {
 }
 div#container {
     width:100%;
+    padding: 20px 16px;
+    flex:initial;
+    flex-direction: column;
+}
+div#container #meImg{
+    height:300px;
+    
+}
+div#container p{
+    width:1000px;
+}
+div#container button{
+    width:75px;
+    height:25px;
+}
+.row {
+    display:table;
+    clear:both;
+}
+.porfolio {
+    width: 100px;
+    float:left;
+    width:25%;
+    padding: 20px;
+}
+footer {
+    width:100%;
+    background-color: #0000;
+    color:black;
+    text-align: center;
+    padding: 20px 0;
+    float: left;
+}
+
+
+/* Phone size */
+
+@media screen and (max-width: 600px) {
+   body{
+    background-color:lightblue;
+    margin:0;
+    padding:0;
+}
+h2{
+    font-size: 50px;
+    text-align: center;
+}
+nav {
+    width:100%;
+    background-color: #6E46FF;
+    clear:both;
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+nav ul {
+     margin: 0;
+    padding:0;
+    overflow: hidden;
+    float: none;
+    width: 100%;
+}
+
+nav ul li {
+    float:none;
+}
+nav ul li a {
+    display: block;
+    color:black;
+    text-align: center;
+    text-decoration:none;
+    padding:14px 16px;
+}
+nav ul li a:hover {
+    background-color: #633FE5;
+}
+.active {
+    background-color:#5334BF;
+}
+div#container {
+    width:100%;
     flex: auto;
     flex-direction: column;
 }
@@ -55,6 +138,9 @@ div#container button{
     width:75px;
     height:25px;
 }
+.porfolio {
+    width: 100px;
+}
 footer {
     width:100%;
     background-color: #0000;
@@ -63,3 +149,6 @@ footer {
     padding: 20px 0;
     float: left;
 }
+    
+}
+

@@ -57,15 +57,21 @@ div#container button{
     width:75px;
     height:25px;
 }
-.row {
-    display:table;
-    clear:both;
+.grid-container {
+   display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+.grid-container h3 {
+    padding: 0px;
+    text-align: center;
 }
 .porfolio {
-    width: 100px;
-    float:left;
-    width:25%;
+    width: 50%;
+    height: auto;
     padding: 20px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
 }
 footer {
     width:100%;
@@ -81,7 +87,7 @@ footer {
 
 @media screen and (max-width: 600px) {
    body{
-    background-color:lightblue;
+    background-color:white;
     margin:0;
     padding:0;
 }
@@ -138,8 +144,21 @@ div#container button{
     width:75px;
     height:25px;
 }
+.grid-container {
+   display: grid;
+  grid-template-columns: auto;
+  padding: 10px;
+  align-content: center;
+   
+}
+.grid-container h3 {
+    padding: 0px;
+    text-align: center;
+}
 .porfolio {
-    width: 100px;
+    width: 100%;
+    align-content: center;
+    float:left;
 }
 footer {
     width:100%;

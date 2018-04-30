@@ -1,8 +1,9 @@
 /* Desktop size */
 body{
     background-color:white;
-    margin:0;
-    padding:0;
+    margin:0 0 0 0;
+    padding:0 0 0 0;
+    border: 0 0 0 0;
 }
 h2{
     font-size: 50px;
@@ -61,18 +62,24 @@ div#container button{
    display: grid;
   grid-template-columns: auto auto auto;
   padding: 10px;
+    float:left;
 }
 .grid-container h3 {
     padding: 0px;
-    text-align: center;
+    text-align: left;
+    margin:0;
+}
+.grid-container p {
+    margin-top: 0;
 }
 .porfolio {
-    width: 50%;
+    width: 30%;
     height: auto;
-    padding: 20px;
-    padding-bottom: 0px;
-    margin-bottom: 0px;
+    padding: 20px  0 0 0;
+    margin: 0 0 0 0;
 }
+
+
 footer {
     width:100%;
     background-color: #0000;
@@ -81,6 +88,15 @@ footer {
     padding: 20px 0;
     float: left;
 }
+
+
+
+
+
+
+
+
+
 
 
 /* Phone size */
@@ -153,12 +169,16 @@ div#container button{
 }
 .grid-container h3 {
     padding: 0px;
+    margin: 0 0 0 0;
     text-align: center;
+    align-content: center;
 }
 .porfolio {
     width: 100%;
     align-content: center;
     float:left;
+    padding:0 0 0 0;
+  margin-bottom: 0;
 }
 footer {
     width:100%;

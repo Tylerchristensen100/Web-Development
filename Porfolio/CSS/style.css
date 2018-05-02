@@ -11,7 +11,7 @@ h2{
 }
 nav {
     width:100%;
-    background-color: #6E46FF;
+    background-color: #2EA8FF;
     clear:both;
     margin: 0;
     font-family: sans-serif;
@@ -36,10 +36,10 @@ nav ul li a {
     padding:14px 16px;
 }
 nav ul li a:hover {
-    background-color: #633FE5;
+    background-color: #0fa8bc;
 }
 .active {
-    background-color:#5334BF;
+    background-color:#10dbf7;
 }
 div#container {
     width:100%;
@@ -54,9 +54,28 @@ div#container #meImg{
 div#container p{
     width:1000px;
 }
+div#container h5{
+    margin-bottom: 0px;
+}
+.input {
+    width: 500px;
+    height: 20px;
+    margin-top: 0px;
+    padding-top: 0px;
+    
+}
+ .Message{
+    width: 600px;
+    height: 300px;
+    margin-top: 0px;
+    padding-top: 0px;
+    
+}
 div#container button{
-    width:75px;
-    height:25px;
+    width:200px;
+    height:50px;
+    background-color: aqua;
+    color:black;
 }
 .grid-container {
    display: grid;
@@ -66,16 +85,16 @@ div#container button{
 }
 .grid-container h3 {
     padding: 0px;
-    text-align: left;
+    text-align: center;
     margin:0;
 }
 .grid-container p {
     margin-top: 0;
 }
 .porfolio {
-    width: 30%;
+    width: 90%;
     height: auto;
-    padding: 20px  0 0 0;
+    padding: 40px  0 0 0;
     margin: 0 0 0 0;
 }
 
@@ -113,7 +132,7 @@ h2{
 }
 nav {
     width:100%;
-    background-color: #6E46FF;
+    background-color: #2EA8FF;
     clear:both;
     margin: 0;
     font-family: sans-serif;
@@ -139,10 +158,10 @@ nav ul li a {
     padding:14px 16px;
 }
 nav ul li a:hover {
-    background-color: #633FE5;
+    background-color: #0fa8bc;
 }
 .active {
-    background-color:#5334BF;
+    background-color:#10dbf7;
 }
 div#container {
     width:100%;
@@ -156,9 +175,26 @@ div#container #meImg{
 div#container p{
     width:1000px;
 }
+div#container h5{
+    margin-bottom: 0px;
+}
+.input {
+    width: 350px;
+    height: 20px;
+    margin-top: 0px;
+    padding-top: 0px; 
+}
+.Message {
+    width: 400px;
+    height: 100px;
+    margin-top: 0px;
+    padding-top: 0px; 
+}
 div#container button{
-    width:75px;
-    height:25px;
+    width:150px;
+    height:35px;
+    background-color: aqua;
+    color:black;
 }
 .grid-container {
    display: grid;

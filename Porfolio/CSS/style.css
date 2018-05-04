@@ -48,11 +48,16 @@ div#container {
     flex-direction: column;
 }
 div#container #meImg{
-    height:300px;
-    
+    height:auto;
+    width: 60%;
+    align-content: center;
+    display:block;
+    margin:auto;
 }
 div#container p{
-    width:1000px;
+    text-align: center;
+    width:500px;
+    align-content: center;
 }
 div#container h5{
     margin-bottom: 0px;
@@ -97,7 +102,30 @@ div#container button{
     padding: 40px  0 0 0;
     margin: 0 0 0 0;
 }
-
+.grid-containers {
+   display: grid;
+  grid-template-columns: auto;
+  padding: 10px;
+align-content: center;
+}
+.porfolios {
+    width:80%;
+    height: auto;
+    padding: 60px  0 0 0;
+    margin: 0 0 0 0;
+    align-content: center;
+}
+.grid-containers h3 {
+    padding: 0px;
+    text-align: center;
+    margin:0;
+    font-size: 30px;
+}
+.grid-containers p {
+    margin-top: 0;
+    font-size: 20px;
+    
+}
 
 footer {
     width:100%;
@@ -169,11 +197,16 @@ div#container {
     flex-direction: column;
 }
 div#container #meImg{
-    height:300px;
-    
+    height:auto;
+    width: 60%;
+    align-content: center;
+    display:block;
+    margin:auto;
 }
 div#container p{
-    width:1000px;
+    text-align: center;
+    width:300px;
+    align-content: center;
 }
 div#container h5{
     margin-bottom: 0px;
@@ -215,6 +248,32 @@ div#container button{
     float:left;
     padding:0 0 0 0;
   margin-bottom: 0;
+}
+    .grid-containers {
+   display: grid;
+  grid-template-columns: auto;
+  padding: 5px;
+    float:left;
+    align-content: center;
+}
+.porfolios {
+    width: 500px;
+    height: auto;
+    padding: 60px  0 0 0;
+    margin: 0 0 0 0;
+    align-content: center;
+}
+.grid-containers h3 {
+    
+    padding: 0px;
+    text-align: left;
+    margin:0;
+    font-size: 20px;
+}
+.grid-containers p {
+    margin-top: 0;
+    font-size: 16px;
+    
 }
 footer {
     width:100%;

@@ -1,6 +1,6 @@
 /* Desktop size */
 body{
-    background-color:white;
+    background-color:lightgray;
     margin:0 0 0 0;
     padding:0 0 0 0;
     border: 0 0 0 0;
@@ -79,8 +79,11 @@ div#container h5{
 div#container button{
     width:200px;
     height:50px;
-    background-color: aqua;
+    background-color: #2EA8FF;
     color:black;
+}
+div#container button:hover {
+    background-color: #0fa8bc;
 }
 .grid-container {
    display: grid;
@@ -150,7 +153,7 @@ footer {
 
 @media screen and (max-width: 600px) {
    body{
-    background-color:white;
+    background-color:lightgray;
     margin:0;
     padding:0;
 }
@@ -226,7 +229,7 @@ div#container h5{
 div#container button{
     width:150px;
     height:35px;
-    background-color: aqua;
+    background-color:#2EA8FF;
     color:black;
 }
 .grid-container {
@@ -252,7 +255,7 @@ div#container button{
     .grid-containers {
    display: grid;
   grid-template-columns: auto;
-  padding: 5px;
+  padding: 5px;...0
     float:left;
     align-content: center;
 }

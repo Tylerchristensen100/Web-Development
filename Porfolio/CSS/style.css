@@ -1,4 +1,14 @@
 /* Desktop size */
+header {
+    background-image: url(../Media/My%20logo.jpg);
+    background-position: right;
+    background-size: cover;
+    width:100%;
+    height:100px;
+     margin: 0;
+    padding:0;
+    border:0;
+}
 body{
     background-color:lightgray;
     margin:0 0 0 0;
@@ -8,6 +18,7 @@ body{
 h2{
     font-size: 50px;
     text-align: center;
+    margin: 0;
 }
 nav {
     width:100%;
@@ -42,18 +53,13 @@ nav ul li a:hover {
     background-color:#10dbf7;
 }
 div#container {
-    width:100%;
+    width:90%;
     padding: 20px 16px;
     flex:initial;
-    flex-direction: column;
+    flex-direction: row;
+    align-content: flex-start;
 }
-div#container #meImg{
-    height:auto;
-    width: 60%;
-    align-content: center;
-    display:block;
-    margin:auto;
-}
+
 div#container p{
     text-align: center;
     width:500px;
@@ -112,6 +118,8 @@ div#container button:hover {
 align-content: center;
 }
 .porfolios {
+    max-width: 800px;
+    min-width: 200px;
     width:80%;
     height: auto;
     padding: 60px  0 0 0;
@@ -120,14 +128,34 @@ align-content: center;
 }
 .grid-containers h3 {
     padding: 0px;
-    text-align: center;
+    text-align: left;
     margin:0;
     font-size: 30px;
 }
 .grid-containers p {
     margin-top: 0;
     font-size: 20px;
-    
+    text-align: left;
+}
+#about {
+    align-content: flex-start;
+    width:100%;
+    padding: 20px 16px;
+}
+div#about #meImg{
+    height:auto;
+    width: 80%;
+    min-width: 200px;
+    max-width: 300px;
+    display:block;
+    margin:auto;
+   align-content: flex-start;
+    float:left;
+}
+div#about #paragraph {
+    text-align: center;
+    align-content: center;
+    float:left;
 }
 
 footer {
@@ -157,6 +185,7 @@ footer {
     margin:0;
     padding:0;
 }
+    
 h2{
     font-size: 50px;
     text-align: center;
@@ -200,10 +229,11 @@ div#container {
     flex-direction: column;
 }
 div#container #meImg{
+    display;flex: auto;
+    flex-direction: row;
+    align-content: flex-start;
     height:auto;
     width: 60%;
-    align-content: center;
-    display:block;
     margin:auto;
 }
 div#container p{
@@ -248,7 +278,6 @@ div#container button{
 .porfolio {
     width: 100%;
     align-content: center;
-    float:left;
     padding:0 0 0 0;
   margin-bottom: 0;
 }
@@ -256,18 +285,16 @@ div#container button{
    display: grid;
   grid-template-columns: auto;
   padding: 5px;...0
-    float:left;
     align-content: center;
 }
 .porfolios {
-    width: 500px;
+    width: 400px;
     height: auto;
     padding: 60px  0 0 0;
     margin: 0 0 0 0;
-    align-content: center;
+    align-content: flex-start;
 }
 .grid-containers h3 {
-    
     padding: 0px;
     text-align: left;
     margin:0;
@@ -276,7 +303,27 @@ div#container button{
 .grid-containers p {
     margin-top: 0;
     font-size: 16px;
-    
+    text-align: left;
+}
+    #about {
+    align-content: flex-start;
+    width:90%;
+    padding: 20px 16px;
+}
+div#about #meImg{
+    height:auto;
+    width: 80%;
+    min-width: 200px;
+    max-width: 300px;
+    display:block;
+    margin:auto;
+   align-content: flex-start;
+    float:left;
+}
+div#about #paragraph {
+    text-align: center;
+    align-content: center;
+    float:left;
 }
 footer {
     width:100%;

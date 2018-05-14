@@ -1,6 +1,6 @@
 /* Desktop size */
 header {
-    background-image: url(../Media/My%20logo.jpg);
+    background-image: url(../Media/Lion_Finshed.jpg);
     background-position: right;
     background-size: cover;
     width:100%;
@@ -156,6 +156,17 @@ div#about #paragraph {
     text-align: center;
     align-content: center;
     float:left;
+}
+div#container #skill h3
+{
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+div#container #skill h5
+{
+    font-size: 15px;
+    padding:0;
+    margin: 5px;
 }
 
 footer {

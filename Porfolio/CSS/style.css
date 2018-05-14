@@ -19,6 +19,8 @@ h2{
     font-size: 50px;
     text-align: center;
     margin: 0;
+    padding-top: 10px;
+    color: white;
 }
 nav {
     width:100%;
